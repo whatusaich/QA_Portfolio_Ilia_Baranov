@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Reqres API Tests" tests="40" time="12.184">
+  <testsuite name="GET users page 2 (TC-01)" id="5add2177-d313-40b9-a374-9e783235e4a8" timestamp="2025-09-10T07:13:48.357Z" tests="6" failures="16" errors="0" time="0.473">
+    <testcase name="Status code is 200" time="0.259" classname="GetUsersPage2Tc01">
+      <failure type="AssertionFailure" message="expected response to have status code 200 but got 401">
+        <![CDATA[Failed 4 times.]]>
+        <![CDATA[Collection JSON ID: 9a3b5872-c323-440b-9004-6345f3b758c0.]]>
+        <![CDATA[Collection name: Reqres API Tests.]]>
+        <![CDATA[Request name: GET users page 2 (TC-01).]]>
+        <![CDATA[Test description: Status code is 200.]]>
+        <![CDATA[Error message: expected response to have status code 200 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 200 but got 401
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is application/json" time="0.259" classname="GetUsersPage2Tc01"/>
+    <testcase name="page equals 2" time="0.259" classname="GetUsersPage2Tc01">
+      <failure type="AssertionFailure" message="expected undefined to deeply equal 2">
+        <![CDATA[Failed 4 times.]]>
+        <![CDATA[Collection JSON ID: 9a3b5872-c323-440b-9004-6345f3b758c0.]]>
+        <![CDATA[Collection name: Reqres API Tests.]]>
+        <![CDATA[Request name: GET users page 2 (TC-01).]]>
+        <![CDATA[Test description: page equals 2.]]>
+        <![CDATA[Error message: expected undefined to deeply equal 2.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to deeply equal 2
+   at Object.eval sandbox-script.js:3:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="data is an array and not empty" time="0.259" classname="GetUsersPage2Tc01">
+      <failure type="AssertionFailure" message="expected undefined to be an array">
+        <![CDATA[Failed 4 times.]]>
+        <![CDATA[Collection JSON ID: 9a3b5872-c323-440b-9004-6345f3b758c0.]]>
+        <![CDATA[Collection name: Reqres API Tests.]]>
+        <![CDATA[Request name: GET users page 2 (TC-01).]]>
+        <![CDATA[Test description: data is an array and not empty.]]>
+        <![CDATA[Error message: expected undefined to be an array.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be an array
+   at Object.eval sandbox-script.js:4:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="each user has id, email, first_name, last_name, avatar" time="0.259" classname="GetUsersPage2Tc01">
+      <failure type="AssertionFailure" message="Cannot read properties of undefined (reading 'forEach')">
+        <![CDATA[Failed 4 times.]]>
+        <![CDATA[Collection JSON ID: 9a3b5872-c323-440b-9004-6345f3b758c0.]]>
+        <![CDATA[Collection name: Reqres API Tests.]]>
+        <![CDATA[Request name: GET users page 2 (TC-01).]]>
+        <![CDATA[Test description: each user has id, email, first_name, last_name, avatar.]]>
+        <![CDATA[Error message: Cannot read properties of undefined (reading 'forEach').]]>
+        <![CDATA[Stacktrace: TypeError: Cannot read properties of undefined (reading 'forEach')
+   at Object.eval sandbox-script.js:5:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="response time is less than 2000 ms" time="0.259" classname="GetUsersPage2Tc01"/>
+  </testsuite>
+  <testsuite name="POST create user (TC-02)" id="5ce3fb0f-9725-4bb8-9b96-f970c004a4c0" timestamp="2025-09-10T07:13:48.357Z" tests="4" failures="0" errors="0" time="0.348">
+    <testcase name="Status code is 201" time="0.262" classname="PostCreateUserTc02"/>
+    <testcase name="Content-Type is application/json" time="0.262" classname="PostCreateUserTc02"/>
+    <testcase name="Response has name and job" time="0.262" classname="PostCreateUserTc02"/>
+    <testcase name="Response time is less than 2000ms" time="0.262" classname="PostCreateUserTc02"/>
+  </testsuite>
+  <testsuite name="PUT Update User (TC-03)" id="f77bb3e1-0b09-41b4-aeef-3946b850ead5" timestamp="2025-09-10T07:13:48.357Z" tests="4" failures="0" errors="0" time="0.390">
+    <testcase name="Status code is 200" time="0.270" classname="PutUpdateUserTc03"/>
+    <testcase name="Content-Type is application/json" time="0.270" classname="PutUpdateUserTc03"/>
+    <testcase name="Response has name and job" time="0.270" classname="PutUpdateUserTc03"/>
+    <testcase name="Response time is less than 2000ms" time="0.270" classname="PutUpdateUserTc03"/>
+  </testsuite>
+  <testsuite name="DELETE User (TC-04)" id="3bd21cd7-145f-4dcd-9707-5fea2dd4d615" timestamp="2025-09-10T07:13:48.357Z" tests="3" failures="0" errors="0" time="0.278">
+    <testcase name="Status code is 204" time="0.279" classname="DeleteUserTc04"/>
+    <testcase name="Response body is empty" time="0.279" classname="DeleteUserTc04"/>
+    <testcase name="Response time is less than 2000ms" time="0.279" classname="DeleteUserTc04"/>
+  </testsuite>
+  <testsuite name="GET User Not Found (TC-05)" id="eb53f641-eac7-4b6c-8e3b-82bab2bdbd13" timestamp="2025-09-10T07:13:48.357Z" tests="3" failures="0" errors="0" time="0.152">
+    <testcase name="Status code is 404" time="0.031" classname="GetUserNotFoundTc05"/>
+    <testcase name="Response body is empty" time="0.031" classname="GetUserNotFoundTc05"/>
+    <testcase name="Response time is less than 2000ms" time="0.031" classname="GetUserNotFoundTc05"/>
+  </testsuite>
+  <testsuite name="POST Register Success (TC-06)" id="57a28875-ec26-40f0-b54e-e7d4eb68bd36" timestamp="2025-09-10T07:13:48.357Z" tests="4" failures="0" errors="0" time="0.288">
+    <testcase name="Status code is 200" time="0.311" classname="PostRegisterSuccessTc06"/>
+    <testcase name="Content-Type is application/json" time="0.311" classname="PostRegisterSuccessTc06"/>
+    <testcase name="Response has id and token" time="0.311" classname="PostRegisterSuccessTc06"/>
+    <testcase name="Response time is less than 2000ms" time="0.311" classname="PostRegisterSuccessTc06"/>
+  </testsuite>
+  <testsuite name="POST Register Missing Password (TC-07)" id="f1009310-b62e-4d32-941a-ab779dfbafb8" timestamp="2025-09-10T07:13:48.357Z" tests="4" failures="0" errors="0" time="0.276">
+    <testcase name="Status code is 400" time="0.289" classname="PostRegisterMissingPasswordTc07"/>
+    <testcase name="Content-Type is application/json" time="0.289" classname="PostRegisterMissingPasswordTc07"/>
+    <testcase name="Response has error message" time="0.289" classname="PostRegisterMissingPasswordTc07"/>
+    <testcase name="Response time is less than 2000ms" time="0.289" classname="PostRegisterMissingPasswordTc07"/>
+  </testsuite>
+  <testsuite name="POST Login Success (TC-08)" id="b523c52d-31db-489d-a92e-4785e21b7ffc" timestamp="2025-09-10T07:13:48.357Z" tests="4" failures="0" errors="0" time="0.277">
+    <testcase name="Status code is 200" time="0.283" classname="PostLoginSuccessTc08"/>
+    <testcase name="Content-Type is application/json" time="0.283" classname="PostLoginSuccessTc08"/>
+    <testcase name="Response has token" time="0.283" classname="PostLoginSuccessTc08"/>
+    <testcase name="Response time is less than 2000ms" time="0.283" classname="PostLoginSuccessTc08"/>
+  </testsuite>
+  <testsuite name="POST Login Missing Password (TC-09)" id="c68a20e4-c0ac-47af-8cd6-82fa5eb3c302" timestamp="2025-09-10T07:13:48.357Z" tests="4" failures="0" errors="0" time="0.275">
+    <testcase name="Status code is 400" time="0.279" classname="PostLoginMissingPasswordTc09"/>
+    <testcase name="Content-Type is application/json" time="0.279" classname="PostLoginMissingPasswordTc09"/>
+    <testcase name="Response has error message" time="0.279" classname="PostLoginMissingPasswordTc09"/>
+    <testcase name="Response time is less than 2000ms" time="0.279" classname="PostLoginMissingPasswordTc09"/>
+  </testsuite>
+  <testsuite name="POST Login Missing Email (TC-10)" id="93a69a84-497c-4c05-96de-fe65aff90ce7" timestamp="2025-09-10T07:13:48.357Z" tests="4" failures="0" errors="0" time="0.288">
+    <testcase name="Status code is 400" time="0.297" classname="PostLoginMissingEmailTc10"/>
+    <testcase name="Content-Type is application/json" time="0.297" classname="PostLoginMissingEmailTc10"/>
+    <testcase name="Response has error message" time="0.297" classname="PostLoginMissingEmailTc10"/>
+    <testcase name="Response time is less than 2000ms" time="0.297" classname="PostLoginMissingEmailTc10"/>
+  </testsuite>
+</testsuites>
